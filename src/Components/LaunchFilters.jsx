@@ -4,21 +4,17 @@ const LaunchFilters = (props) => {
   return (
     <div className="flex flex-wrap bg-gray-100 w-auto h-auto">
       <div className="bg-white rounded p-3 shadow-lg">
-        <div className="flex items-center space-x-4 p-2 mb-5">
-          <div>
-            <h4 className="font-semibold text-lg text-gray-700 capitalize font-poppins tracking-wide">
-              Filters
-            </h4>
-          </div>
+        <div>
+          <h4 className="font-semibold text-lg text-gray-700 capitalize font-poppins tracking-wide">
+            Filters
+          </h4>
         </div>
         <ul className="space-y-2 text-md">
           <li>
-            <span className="flex items-center space-x-3 text-gray-700 p-2 font-medium">
-              Launch Year
-            </span>
+            <span className="text-gray-700 font-medium">Launch Year</span>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2006 })
@@ -30,7 +26,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2006{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2007 })
@@ -43,8 +39,8 @@ const LaunchFilters = (props) => {
               2007{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2008 })
@@ -56,7 +52,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2008{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2009 })
@@ -69,8 +65,8 @@ const LaunchFilters = (props) => {
               2009{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2010 })
@@ -82,7 +78,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2010{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2011 })
@@ -95,8 +91,8 @@ const LaunchFilters = (props) => {
               2011{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2012 })
@@ -108,7 +104,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2012{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2013 })
@@ -121,8 +117,8 @@ const LaunchFilters = (props) => {
               2013{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2014 })
@@ -134,7 +130,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2014{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2015 })
@@ -147,8 +143,8 @@ const LaunchFilters = (props) => {
               2015{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2016 })
@@ -160,7 +156,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2016{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2017 })
@@ -173,8 +169,8 @@ const LaunchFilters = (props) => {
               2017{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2018 })
@@ -186,7 +182,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2018{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2019 })
@@ -199,8 +195,8 @@ const LaunchFilters = (props) => {
               2019{" "}
             </label>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: 2020 })
@@ -212,7 +208,7 @@ const LaunchFilters = (props) => {
               />{" "}
               2020{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_year: null })
@@ -226,12 +222,10 @@ const LaunchFilters = (props) => {
             </label>
           </li>
           <li>
-            <span className="flex items-center space-x-3 text-gray-700 p-2 font-medium">
-              Successful Launch
-            </span>
+            <span className="text-gray-700 font-medium">Successful Launch</span>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_success: true })
@@ -243,7 +237,7 @@ const LaunchFilters = (props) => {
               />{" "}
               Yes{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, launch_success: false })
@@ -257,12 +251,12 @@ const LaunchFilters = (props) => {
             </label>
           </li>
           <li>
-            <span className="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+            <span className="text-gray-700 font-medium">
               Successful Landing
             </span>
           </li>
-          <li>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+          <li className="flex flex-wrap">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, land_success: true })
@@ -274,7 +268,7 @@ const LaunchFilters = (props) => {
               />{" "}
               Yes{" "}
             </label>
-            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+            <label className="w-1/2 text-gray-700  rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
               <input
                 onChange={() =>
                   props.setFilter({ ...props.filter, land_success: false })

@@ -15,7 +15,9 @@ function App() {
 
   return (
     <div id="App">
-      <p>SpaceX Launch Program</p>
+      <h1 className="font-semibold tracking-tight text-4xl p-4">
+        SpaceX Launch Program
+      </h1>
       <div className="flex mb-4">
         <div className="w-full max-w-max min-w-max">
           <LaunchFilters filter={filter} setFilter={setFilter} />
