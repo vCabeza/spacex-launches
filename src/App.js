@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import LaunchFilters from "./Components/LaunchFilters";
+import LaunchList from "./Components/LaunchList";
+import { fetchLaunchs } from "./http";
 
 function App() {
+  const [launches, setLaunches] = useState([]);
+  const [filter, setFilter] = useState({});
+
+  useEffect(() => {
+    fetchLaunchs(filter).then((response) => {
+      setLaunches(response.data);
+    });
+  }, [filter]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <p>SpaceX Launch Program</p>
+      <div className="flex mb-4">
+        <div className="w-full max-w-max min-w-max">
+          <LaunchFilters filter={filter} setFilter={setFilter} />
+        </div>
+        {launches.length > 0 ? (
+          <div>
+            <LaunchList launches={launches} />
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
     </div>
   );
 }
