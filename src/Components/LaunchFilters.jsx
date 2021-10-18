@@ -2,7 +2,7 @@ import React from "react";
 
 const LaunchFilters = (props) => {
   return (
-    <div className="flex flex-wrap bg-gray-100 w-full h-auto">
+    <div className="flex flex-wrap bg-gray-100 w-auto h-auto">
       <div className="bg-white rounded p-3 shadow-lg">
         <div className="flex items-center space-x-4 p-2 mb-5">
           <div>
@@ -17,203 +17,275 @@ const LaunchFilters = (props) => {
               Launch Year
             </span>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2006 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2006
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2007 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2007
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2006 })
+                }
+                type="radio"
+                value="2006"
+                id="2006"
+                name="year"
+              />{" "}
+              2006{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2007 })
+                }
+                type="radio"
+                value="2007"
+                id="2007"
+                name="year"
+              />{" "}
+              2007{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2008 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2008
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2009 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2009
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2008 })
+                }
+                type="radio"
+                value="2008"
+                id="2008"
+                name="year"
+              />{" "}
+              2008{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2009 })
+                }
+                type="radio"
+                value="2009"
+                id="2009"
+                name="year"
+              />{" "}
+              2009{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2010 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2010
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2011 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2011
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2010 })
+                }
+                type="radio"
+                value="2010"
+                id="2010"
+                name="year"
+              />{" "}
+              2010{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2011 })
+                }
+                type="radio"
+                value="2011"
+                id="2011"
+                name="year"
+              />{" "}
+              2011{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2012 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2012
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2013 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2013
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2012 })
+                }
+                type="radio"
+                value="2012"
+                id="2012"
+                name="year"
+              />{" "}
+              2012{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2013 })
+                }
+                type="radio"
+                value="2013"
+                id="2013"
+                name="year"
+              />{" "}
+              2013{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2014 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2014
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2015 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2015
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2014 })
+                }
+                type="radio"
+                value="2014"
+                id="2014"
+                name="year"
+              />{" "}
+              2014{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2015 })
+                }
+                type="radio"
+                value="2015"
+                id="2015"
+                name="year"
+              />{" "}
+              2015{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2016 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2016
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2017 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2017
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2016 })
+                }
+                type="radio"
+                value="2016"
+                id="2016"
+                name="year"
+              />{" "}
+              2016{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2017 })
+                }
+                type="radio"
+                value="2017"
+                id="2017"
+                name="year"
+              />{" "}
+              2017{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2018 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2018
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2019 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2019
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2018 })
+                }
+                type="radio"
+                value="2018"
+                id="2018"
+                name="year"
+              />{" "}
+              2018{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2019 })
+                }
+                type="radio"
+                value="2019"
+                id="2019"
+                name="year"
+              />{" "}
+              2019{" "}
+            </label>
           </li>
-          <li className="flex justify-center">
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2020 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2020
-            </a>
-            <a
-              href="#"
-              onClick={() =>
-                props.setFilter({ ...props.filter, launch_year: 2021 })
-              }
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              2021
-            </a>
+          <li>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: 2020 })
+                }
+                type="radio"
+                value="2020"
+                id="2020"
+                name="year"
+              />{" "}
+              2020{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_year: null })
+                }
+                type="radio"
+                value="all"
+                id="all"
+                name="year"
+              />{" "}
+              All{" "}
+            </label>
           </li>
           <li>
             <span className="flex items-center space-x-3 text-gray-700 p-2 font-medium">
-              Succesful Launch
+              Successful Launch
             </span>
           </li>
           <li>
-            <a
-              href="#"
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              Yes
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              No
-            </a>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_success: true })
+                }
+                type="radio"
+                value="yes"
+                id="yes"
+                name="launch"
+              />{" "}
+              Yes{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, launch_success: false })
+                }
+                type="radio"
+                value="no"
+                id="no"
+                name="launch"
+              />{" "}
+              No{" "}
+            </label>
           </li>
           <li>
             <span className="flex items-center space-x-3 text-gray-700 p-2 font-medium">
-              Succesful Landing
+              Successful Landing
             </span>
           </li>
           <li>
-            <a
-              href="#"
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              Yes
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline"
-            >
-              No
-            </a>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, land_success: true })
+                }
+                type="radio"
+                value="yes"
+                id="yes"
+                name="landing"
+              />{" "}
+              Yes{" "}
+            </label>
+            <label className="text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
+              <input
+                onChange={() =>
+                  props.setFilter({ ...props.filter, land_success: false })
+                }
+                type="radio"
+                value="no"
+                id="no"
+                name="landing"
+              />{" "}
+              No{" "}
+            </label>
           </li>
         </ul>
       </div>

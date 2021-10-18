@@ -31,7 +31,12 @@ const LaunchCard = (props) => {
           )}
           <p>Launch Year: {props.launch.launch_year}</p>
           <p>Succesful Launch: {props.launch.launch_success ? "Yes" : "No"}</p>
-          <p>Seccesful Landing: {props.launch.launch_landing ? "Yes" : "No"}</p>
+          <p>
+            Seccesful Landing:{" "}
+            {props.launch.rocket.first_stage.cores[0].land_success
+              ? "Yes"
+              : "No"}
+          </p>
         </div>
       </div>
     </div>
